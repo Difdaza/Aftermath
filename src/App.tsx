@@ -202,7 +202,7 @@ export function App() {
                       <button type="button" className="wallet-btn" onClick={openAccountModal}>{account.displayName}</button>
                     )
                   ) : (
-                    <button type="button" className="wallet-btn" onClick={openConnectModal}>Connecter le portefeuille</button>
+                    <button type="button" className="wallet-btn" onClick={openConnectModal}>Connect Wallet</button>
                   )}
                 </div>
               );
