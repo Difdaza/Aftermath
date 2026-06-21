@@ -185,7 +185,7 @@ export function App() {
       <header className="bar">
         <div className="brand">
           <ShieldCheck weight="duotone" className="brand-ic" />
-          <span className="wm">Claim Forge</span>
+          <span className="wm">Aftermath</span>
           <em className="tag">exploit claim system</em>
         </div>
         <div className="bar-r">
@@ -213,10 +213,10 @@ export function App() {
 
       <section className="hero">
         <div className="hcopy">
-          <p className="kicker">Claim Forge / on-chain exploit insurance</p>
+          <p className="kicker">Aftermath / on-chain exploit insurance</p>
           <h1>Exploit claims,<br />forged clean.</h1>
           <p className="lede">
-            Claim Forge pools capital against smart-contract exploits. File a claim with the on-chain trace and the public
+            Aftermath pools capital against smart-contract exploits. File a claim with the on-chain trace and the public
             post-mortem. A panel of GenLayer validators audits the evidence and rules the <em>eligible damage in
             covered units</em>. Only proven exploits are paid; arbitrage and operator error are not.
           </p>
@@ -248,7 +248,7 @@ export function App() {
 
       <section className="how" id="how">
         <div className="how-h">
-          <p className="kicker">How Claim Forge works</p>
+          <p className="kicker">How Aftermath works</p>
           <h2>From breach to payout, entirely on-chain.</h2>
         </div>
         <div className="how-steps">

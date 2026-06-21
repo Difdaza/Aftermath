@@ -12,8 +12,8 @@ On-chain exploit insurance on [GenLayer](https://genlayer.com). File a protocol-
 ## Architecture
 
 ```
-backend/claim-forge.py   GenLayer Intelligent Contract (Python, runs on the GenVM)
-frontend/                React + Vite + TypeScript dashboard (genlayer-js)
+src/                   React + Vite + TypeScript dashboard (genlayer-js)
+backend/aftermath.py   GenLayer Intelligent Contract (Python, runs on the GenVM)
 ```
 
 The dashboard is a static single-page app. It reads protocol state directly through genlayer-js (`get_case`, `get_counts`, `get_pool_balance`) and signs writes with the connected wallet. No backend server.
@@ -26,10 +26,9 @@ The dashboard is a static single-page app. It reads protocol state directly thro
 ## Run locally
 
 ```bash
-cd frontend
 npm install
 npm run dev      # Vite dev server
-npm run build    # production build to frontend/dist
+npm run build    # production build to dist
 ```
 
 ## Deploy the contract
@@ -37,7 +36,7 @@ npm run build    # production build to frontend/dist
 Requires the [GenLayer CLI](https://docs.genlayer.com/) (`npx genlayer`). Set the deployed address in `frontend/src/chain.ts` afterwards.
 
 ```bash
-npx genlayer deploy --contract backend/claim-forge.py
+npx genlayer deploy --contract backend/aftermath.py
 ```
 
 ## Contract methods (`ClaimForge`)
