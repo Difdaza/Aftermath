@@ -21,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             borderRadius: "small",
             fontStack: "system",
           })}
+          locale="en-US"
         >
           <App />
         </RainbowKitProvider>
